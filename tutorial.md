@@ -21,5 +21,5 @@ tokyo: ⛅️  +28°C
 
 # Tutorial using nats.go
 ```
-$ pushd hello-world && go mod download && go run main.go && pulld
+$ pushd hello-world && go mod download && go run main.go && popd
 ```

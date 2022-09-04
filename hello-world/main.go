@@ -18,12 +18,12 @@ func main() {
 		Name:     "ORDERS",
 		Subjects: []string{"ORDERS.*"},
 	})
-	
+
 	// Simple Stream Publisher
 	js.Publish("ORDERS.scratch", []byte("hello"))
 
 	// Simple Async Stream Publisher
-	for i := 0; i < 500; i++ {
+	for i := 0; i < 20; i++ {
 		js.PublishAsync("ORDERS.scratch", []byte("hello"))
 	}
 	select {
